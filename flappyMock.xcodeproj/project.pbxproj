@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE9039631D79B63000D25C54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9039621D79B63000D25C54 /* AppDelegate.swift */; };
+		AE9039651D79B63000D25C54 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AE9039641D79B63000D25C54 /* GameScene.sks */; };
+		AE9039671D79B63000D25C54 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9039661D79B63000D25C54 /* GameScene.swift */; };
+		AE9039691D79B63000D25C54 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9039681D79B63000D25C54 /* GameViewController.swift */; };
+		AE90396C1D79B63000D25C54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE90396A1D79B63000D25C54 /* Main.storyboard */; };
+		AE90396E1D79B63000D25C54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE90396D1D79B63000D25C54 /* Assets.xcassets */; };
+		AE9039711D79B63000D25C54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE90396F1D79B63000D25C54 /* LaunchScreen.storyboard */; };
+		AE90397C1D79B63000D25C54 /* flappyMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90397B1D79B63000D25C54 /* flappyMockTests.swift */; };
+		AE9039871D79B63000D25C54 /* flappyMockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9039861D79B63000D25C54 /* flappyMockUITests.swift */; };
+		AEA8B10D1D86E7C800EBCAB1 /* coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = AEA8B10C1D86E7C800EBCAB1 /* coin.wav */; };
+		AEA8B10F1D86E83D00EBCAB1 /* explosion.wav in Resources */ = {isa = PBXBuildFile; fileRef = AEA8B10E1D86E83D00EBCAB1 /* explosion.wav */; };
+		AEA8B1121D86E90E00EBCAB1 /* music.m4a in Resources */ = {isa = PBXBuildFile; fileRef = AEA8B1111D86E90E00EBCAB1 /* music.m4a */; };
+		AEA8B1141D86E95900EBCAB1 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = AEA8B1131D86E95900EBCAB1 /* spark.png */; };
+		AEA8B1161D86E96400EBCAB1 /* PlayerExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = AEA8B1151D86E96400EBCAB1 /* PlayerExplosion.sks */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE9039781D79B63000D25C54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE9039571D79B63000D25C54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE90395E1D79B63000D25C54;
+			remoteInfo = flappyMock;
+		};
+		AE9039831D79B63000D25C54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE9039571D79B63000D25C54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE90395E1D79B63000D25C54;
+			remoteInfo = flappyMock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE90395F1D79B63000D25C54 /* flappyMock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flappyMock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9039621D79B63000D25C54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE9039641D79B63000D25C54 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		AE9039661D79B63000D25C54 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		AE9039681D79B63000D25C54 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		AE90396B1D79B63000D25C54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE90396D1D79B63000D25C54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE9039701D79B63000D25C54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE9039721D79B63000D25C54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE9039771D79B63000D25C54 /* flappyMockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flappyMockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE90397B1D79B63000D25C54 /* flappyMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flappyMockTests.swift; sourceTree = "<group>"; };
+		AE90397D1D79B63000D25C54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE9039821D79B63000D25C54 /* flappyMockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = flappyMockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9039861D79B63000D25C54 /* flappyMockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flappyMockUITests.swift; sourceTree = "<group>"; };
+		AE9039881D79B63000D25C54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEA8B10C1D86E7C800EBCAB1 /* coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = coin.wav; path = ../Assets.xcassets/coin.dataset/coin.wav; sourceTree = "<group>"; };
+		AEA8B10E1D86E83D00EBCAB1 /* explosion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = explosion.wav; path = ../Assets.xcassets/explosion.dataset/explosion.wav; sourceTree = "<group>"; };
+		AEA8B1111D86E90E00EBCAB1 /* music.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = music.m4a; path = ../Assets.xcassets/music.dataset/music.m4a; sourceTree = "<group>"; };
+		AEA8B1131D86E95900EBCAB1 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		AEA8B1151D86E96400EBCAB1 /* PlayerExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PlayerExplosion.sks; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE90395C1D79B63000D25C54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE9039741D79B63000D25C54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE90397F1D79B63000D25C54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE9039561D79B63000D25C54 = {
+			isa = PBXGroup;
+			children = (
+				AE9039611D79B63000D25C54 /* flappyMock */,
+				AE90397A1D79B63000D25C54 /* flappyMockTests */,
+				AE9039851D79B63000D25C54 /* flappyMockUITests */,
+				AE9039601D79B63000D25C54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE9039601D79B63000D25C54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE90395F1D79B63000D25C54 /* flappyMock.app */,
+				AE9039771D79B63000D25C54 /* flappyMockTests.xctest */,
+				AE9039821D79B63000D25C54 /* flappyMockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE9039611D79B63000D25C54 /* flappyMock */ = {
+			isa = PBXGroup;
+			children = (
+				AE9039621D79B63000D25C54 /* AppDelegate.swift */,
+				AE9039641D79B63000D25C54 /* GameScene.sks */,
+				AE9039661D79B63000D25C54 /* GameScene.swift */,
+				AE9039681D79B63000D25C54 /* GameViewController.swift */,
+				AE90396A1D79B63000D25C54 /* Main.storyboard */,
+				AE90396D1D79B63000D25C54 /* Assets.xcassets */,
+				AEA8B1101D86E85200EBCAB1 /* sounds */,
+				AE90396F1D79B63000D25C54 /* LaunchScreen.storyboard */,
+				AE9039721D79B63000D25C54 /* Info.plist */,
+			);
+			path = flappyMock;
+			sourceTree = "<group>";
+		};
+		AE90397A1D79B63000D25C54 /* flappyMockTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE90397B1D79B63000D25C54 /* flappyMockTests.swift */,
+				AE90397D1D79B63000D25C54 /* Info.plist */,
+			);
+			path = flappyMockTests;
+			sourceTree = "<group>";
+		};
+		AE9039851D79B63000D25C54 /* flappyMockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE9039861D79B63000D25C54 /* flappyMockUITests.swift */,
+				AE9039881D79B63000D25C54 /* Info.plist */,
+			);
+			path = flappyMockUITests;
+			sourceTree = "<group>";
+		};
+		AEA8B1101D86E85200EBCAB1 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				AEA8B1111D86E90E00EBCAB1 /* music.m4a */,
+				AEA8B10E1D86E83D00EBCAB1 /* explosion.wav */,
+				AEA8B1151D86E96400EBCAB1 /* PlayerExplosion.sks */,
+				AEA8B1131D86E95900EBCAB1 /* spark.png */,
+				AEA8B10C1D86E7C800EBCAB1 /* coin.wav */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE90395E1D79B63000D25C54 /* flappyMock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE90398B1D79B63000D25C54 /* Build configuration list for PBXNativeTarget "flappyMock" */;
+			buildPhases = (
+				AE90395B1D79B63000D25C54 /* Sources */,
+				AE90395C1D79B63000D25C54 /* Frameworks */,
+				AE90395D1D79B63000D25C54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = flappyMock;
+			productName = flappyMock;
+			productReference = AE90395F1D79B63000D25C54 /* flappyMock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE9039761D79B63000D25C54 /* flappyMockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE90398E1D79B63000D25C54 /* Build configuration list for PBXNativeTarget "flappyMockTests" */;
+			buildPhases = (
+				AE9039731D79B63000D25C54 /* Sources */,
+				AE9039741D79B63000D25C54 /* Frameworks */,
+				AE9039751D79B63000D25C54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE9039791D79B63000D25C54 /* PBXTargetDependency */,
+			);
+			name = flappyMockTests;
+			productName = flappyMockTests;
+			productReference = AE9039771D79B63000D25C54 /* flappyMockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE9039811D79B63000D25C54 /* flappyMockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE9039911D79B63000D25C54 /* Build configuration list for PBXNativeTarget "flappyMockUITests" */;
+			buildPhases = (
+				AE90397E1D79B63000D25C54 /* Sources */,
+				AE90397F1D79B63000D25C54 /* Frameworks */,
+				AE9039801D79B63000D25C54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE9039841D79B63000D25C54 /* PBXTargetDependency */,
+			);
+			name = flappyMockUITests;
+			productName = flappyMockUITests;
+			productReference = AE9039821D79B63000D25C54 /* flappyMockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE9039571D79B63000D25C54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Mathien;
+				TargetAttributes = {
+					AE90395E1D79B63000D25C54 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
+					};
+					AE9039761D79B63000D25C54 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
+						TestTargetID = AE90395E1D79B63000D25C54;
+					};
+					AE9039811D79B63000D25C54 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
+						TestTargetID = AE90395E1D79B63000D25C54;
+					};
+				};
+			};
+			buildConfigurationList = AE90395A1D79B63000D25C54 /* Build configuration list for PBXProject "flappyMock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE9039561D79B63000D25C54;
+			productRefGroup = AE9039601D79B63000D25C54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE90395E1D79B63000D25C54 /* flappyMock */,
+				AE9039761D79B63000D25C54 /* flappyMockTests */,
+				AE9039811D79B63000D25C54 /* flappyMockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE90395D1D79B63000D25C54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEA8B10F1D86E83D00EBCAB1 /* explosion.wav in Resources */,
+				AEA8B1121D86E90E00EBCAB1 /* music.m4a in Resources */,
+				AEA8B10D1D86E7C800EBCAB1 /* coin.wav in Resources */,
+				AEA8B1161D86E96400EBCAB1 /* PlayerExplosion.sks in Resources */,
+				AE9039651D79B63000D25C54 /* GameScene.sks in Resources */,
+				AE9039711D79B63000D25C54 /* LaunchScreen.storyboard in Resources */,
+				AEA8B1141D86E95900EBCAB1 /* spark.png in Resources */,
+				AE90396E1D79B63000D25C54 /* Assets.xcassets in Resources */,
+				AE90396C1D79B63000D25C54 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE9039751D79B63000D25C54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE9039801D79B63000D25C54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE90395B1D79B63000D25C54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE9039671D79B63000D25C54 /* GameScene.swift in Sources */,
+				AE9039691D79B63000D25C54 /* GameViewController.swift in Sources */,
+				AE9039631D79B63000D25C54 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE9039731D79B63000D25C54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE90397C1D79B63000D25C54 /* flappyMockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE90397E1D79B63000D25C54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE9039871D79B63000D25C54 /* flappyMockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE9039791D79B63000D25C54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE90395E1D79B63000D25C54 /* flappyMock */;
+			targetProxy = AE9039781D79B63000D25C54 /* PBXContainerItemProxy */;
+		};
+		AE9039841D79B63000D25C54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE90395E1D79B63000D25C54 /* flappyMock */;
+			targetProxy = AE9039831D79B63000D25C54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE90396A1D79B63000D25C54 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE90396B1D79B63000D25C54 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE90396F1D79B63000D25C54 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE9039701D79B63000D25C54 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE9039891D79B63000D25C54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE90398A1D79B63000D25C54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE90398C1D79B63000D25C54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = flappyMock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bm.flappyMock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AE90398D1D79B63000D25C54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = flappyMock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bm.flappyMock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AE90398F1D79B63000D25C54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = flappyMockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bm.flappyMockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flappyMock.app/flappyMock";
+			};
+			name = Debug;
+		};
+		AE9039901D79B63000D25C54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = flappyMockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bm.flappyMockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flappyMock.app/flappyMock";
+			};
+			name = Release;
+		};
+		AE9039921D79B63000D25C54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = flappyMockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bm.flappyMockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = flappyMock;
+			};
+			name = Debug;
+		};
+		AE9039931D79B63000D25C54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = flappyMockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bm.flappyMockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = flappyMock;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE90395A1D79B63000D25C54 /* Build configuration list for PBXProject "flappyMock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE9039891D79B63000D25C54 /* Debug */,
+				AE90398A1D79B63000D25C54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE90398B1D79B63000D25C54 /* Build configuration list for PBXNativeTarget "flappyMock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE90398C1D79B63000D25C54 /* Debug */,
+				AE90398D1D79B63000D25C54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE90398E1D79B63000D25C54 /* Build configuration list for PBXNativeTarget "flappyMockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE90398F1D79B63000D25C54 /* Debug */,
+				AE9039901D79B63000D25C54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE9039911D79B63000D25C54 /* Build configuration list for PBXNativeTarget "flappyMockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE9039921D79B63000D25C54 /* Debug */,
+				AE9039931D79B63000D25C54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE9039571D79B63000D25C54 /* Project object */;
+}
